@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>League Of Gaming</title>
+    <link rel="stylesheet" type="text/css" href="E:\Uni Work\Ctec3905\css\style.css" />
+</head>
+
+<body>
+
+      <div class="header">
+          <div class="headerContent">
+              <a href="#">
+                  <img src="E:\Uni Work\Ctec3905\images\home\log.jpg" >	  
+	          </a>
+	      </div>
+      </div>
+
+    <button onclick="document.getElementById('id1').style.display='block'">Sign Up/Sign In</button>
+    
+    <div id="id1" class="modal">
+      <span onclick="document.getElementById('id1').style.display='none'" class="close" title="Close Modal">&times;</span>
+
+      <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="E:\Uni Work\Ctec3905\images\home\avatar.jpg" alt="Avatar" class="avatar" style="position: relative; left: 27%" >
+    </div>
+
+    <div class="containlog" style="position: relative; left: 18%; color: green" >
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+      <button type="submit">Sign In</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="containlog" style="background-color: green; opacity: 0.8; position: relative; left: 25%; width: 540px; margin-top: 2.5%">
+      <button type="button" onclick="document.getElementById('id1').style.display='none'" class="cancelbtn" style="position: relative; left: 40%">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+  <div class="nav">
+  	<div class="dropdown">
+  	<button class="drop"><a href="index.html" style="text-decoration: none">Home
+         <i class="fa fa-caret-down"></i>
+  	 </button>
+  	    <div class="dropdown-menu">
+
+  	    </div>
+  	 </div>
+    <div class="dropdown">
+    <button class="drop"><a href="xbox.html" style="text-decoration: none">Xbox
+       <i class="fa fa-caret-down"></i>
+    </button>
+      <div class="dropdown-menu">
+      <a href="xboxconsole.html">Xbox One Consoles</a>
+      <a href="xboxgame.html">Xbox One Games</a>
+      <a href="xboxacess.html">Xbox One Accessories</a>
+      <a href="xboxlive.html">Xbox Live</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <button class="drop"><a href="playstation.html" style="text-decoration: none">Playstation
+         <i class="fa fa-caret-down"></i>
+     </button>
+       <div class="dropdown-menu">
+          <a href="psconsole.html">Playstation 4 Consoles</a>
+          <a href="psgame.html">Playstation 4 Games</a>
+          <a href="psacess.html">Playstation 4 Accessories</a>
+          <a href="psn.html">Playstation Network</a>
+        </div>  
+    </div>
+
+    <div class="dropdown">
+    <button class="drop"><a href="nintendo.html" style="text-decoration: none">Nintendo
+       <i class="fa fa-caret-down"></i>
+    </button>
+      <div class="dropdown-menu">
+      <a href="nincon.html">Nintendo Consoles</a>
+      <a href="ningame.html">Nintendo Games</a>
+      <a href="ninacess.html">Nintendo Accessories</a>
+      <a href="nineshop.html">Nintendo ESHOP</a>
+      </div>
+    </div>   
+
+    <div class="dropdown">
+    <button class="drop"><a href="pc.html" style="text-decoration: none">PC
+         <i class="fa fa-caret-down"></i>
+     </button>
+       <div class="dropdown-menu">
+          <a href="pcs.html">PC Gaming Systems</a>
+          <a href="pcg.html">PC Games</a>
+          <a href="pcacess.html">PC Accessories</a>
+          <a href="pcu.html">PC Upgrades</a>
+        </div>  
+    </div>     
+ </div>
+
+     <div class="codbanner">
+       <img class="center" src="E:\Uni Work\Ctec3905\images\cod\banner1.jpg" alt="home" width="100%" height="100%" /> 
+     </div> 
+
+
+<main>
+
+<!-- Images to open lightbox -->
+    <div class="row">
+      <div class="column">
+        <img src="images\cod\cod1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 400px; height: 250px; position: absolute; top: 100%;  border: 20px solid;
+  color: #FFD700;">
+      </div>
+      <div class="column">
+        <img src="images\cod\cod2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width: 400px; height: 250px; position: absolute; top: 100%; left: 25%;   border: 20px solid;
+  color: #FFD700;">
+      </div>
+      <div class="column">
+        <img src="images\cod\cod3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width: 400px; height: 250px; position: absolute; top: 100%; left: 45%; border: 20px solid;
+  color: #FFD700;">
+      </div>
+      <div class="column">
+        <img src="images\cod\cod4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" style="width: 400px; height: 250px; position: absolute; top: 100%; left: 65%; border: 20px solid;
+  color: #FFD700;">
+      </div>
+    </div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images\cod\cod1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images\cod\cod2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images\cod\cod3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images\cod\cod4.jpg" style="width:100%">
+    </div>
+
+   <!-- Controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>    
+
+<!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail controls -->
+    <div class="column">
+      <img class="demo" src="images\cod\cod1.jpg" onclick="currentSlide(1)" alt="Campaign" style="width: 400px; height: 250px">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\cod\cod2.jpg" onclick="currentSlide(2)" alt="Zombies" style="width: 400px; height: 250px">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\cod\cod3.jpg" onclick="currentSlide(3)" alt="Multiplayer" style="width: 400px; height: 250px">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images\cod\cod4.jpg" onclick="currentSlide(4)" alt="War" style="width: 400px; height: 250px">
+    </div>    
+  </div>
+ </div> 
+
+
+
+<div id="Cod-Summary">
+
+<table border="0" style="width:100%">
+  <tr>
+    <td><h1>Call of Duty: WW II - £49.99 - Also Available On PS4 And PC </h1></td>
+   </tr>
+     <tr>
+     <td><h4> Call of Duty® returns to its roots with Call of Duty®: WWII - an experience that redefines World War II for a new gaming generation. Call of Duty®: WWII tells the story of heroism on a global scale, through the unbreakable brotherhood of common men fighting to preserve freedom in a world on the brink of tyranny. </h4></td>
+   </tr>
+   <tr> 
+         <td><h4> Features
+
+•Campaign mode transports players to the European theater as they engage in an all-new Call of Duty® story set in iconic World War II battles. 
+• Multiplayer marks a return to boots-on-the ground Call of Duty gameplay, immersing the player in World War II like never before. Authentic weapons, traditional run-and-gun action, and exciting modes of play immerse gamers in historic World War II-themed locations, and thrilling Multiplayer action. 
+• Co-operative mode unleashes an original story featuring a dark new enemy in an experience full of unexpected, adrenaline-pumping moments. (to be revealed soon) 
+• Call of Duty: WWII Nazi Zombies is an original, terrifying co-operative mode that unleashes a frightening new horror story for Call of Duty’s zombies fans. Nothing is as it seems in this zombies horror, as a dark and sinister plot unfolds to unleash an invincible army of the dead. 
+• The Divisions Pack includes 5 Premium Gear Sets inspired by the 5 Divisions in Call of Duty®: WWII! Infantry Division riflemen are always in the thick of it with finely-tuned rifles and impeccable marksmanship. Well-equipped with incendiary rounds and tactical grenades, the Expeditionary Division’s shotguns literally pack heat. Airborne Division paratroopers endure extreme physical conditioning to outmaneuver opponents with their submachine guns. Focused on stealth and target identification, Mountain Division snipers generate constant fear in the enemy and strike when least expected. Armored Division soldiers are the best supplied in battle and hold down positions with their explosives and light machine guns.  </h4></td>
+   </tr>
+   <tr>
+         <td><h4> Multiplayer marks a return to iconic boots on the ground Call of Duty gameplay that fans know and love, featuring an arsenal of World War II-era weapons, and fast-paced, heart-pumping, intense run-and-gun action. </h4></td>
+  </tr>
+  </table>
+</div>
+
+
+</main>	
+
+
+<footer>
+
+    <div id="user-review1">
+
+    <form action="" method="POST">
+    <fieldset>
+       <legend><h2> Leave A Review Of The Game </h2></legend>
+        <label for="User"><h4>Name</h4></label>
+        <input type="text" name="user" id="user" value="" maxlength="80" />
+       <br /><br />
+        <label for="discussion"><h4>Let Us Know What You Think:</h4></label>
+        <textarea rows="6" cols="50" name="discussion" id="discussion"></textarea>
+       <br /><br />
+       <input type="submit" value="Submit" />
+    </fieldset>
+    </form>
+   </div>
+
+
+
+
+
+
+
+
+
+
+	
+<script type="text/javascript" src="lightbox.js"></script>
+
+
+
+</footer>
+
+
+
+
+
+</body>
+
+</html>
